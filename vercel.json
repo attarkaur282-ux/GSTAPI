@@ -8,6 +8,14 @@
   ],
   "routes": [
     {
+      "src": "/api/gst(.*)",
+      "dest": "gst.py"
+    },
+    {
+      "src": "/health(.*)",
+      "dest": "gst.py"
+    },
+    {
       "src": "/(.*)",
       "dest": "gst.py"
     }
